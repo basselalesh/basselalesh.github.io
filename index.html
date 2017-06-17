@@ -1,45 +1,214 @@
-<htm-
+<html>
 
 <head>
-  <title>Bassel Alesh</title>
-    <link rel="icon" href="s.ico" />
 
+  <title>Bassel Alesh</title>
+  <link rel="icon" href="s.ico" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
   <style type="text/css">
-  body {
-    font-family: Palatino, "Times New Roman",
-          Times, serif;
-    background-color: #FAF0E6 }
+  body {background: #FFFFFF;
+    z-index:1;
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 59s ease infinite;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
 
   h1 {
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
+   font-family: 'Eczar', serif;}
   p.prelude {
-      color: #4B0F90;
+      color: #191970;
       text-align: center;
+      font-size: 200%;
+      font-family: 'orkweb', serif;
+
+  }
+
+  p.italic {
+    font-style: italic;
+     color: #008000;
+      text-align: center;
+      font-family: 'orkweb_medium', serif;
+      font-size: 200%;
   }
 
   .container {
   text-align: center;
   }
 
-  img {
-    width: 5%;
-    padding: 0px 50px 0px 0px;
+  i {
+    text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
   }
 
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: -10;
+    transform: translateZ(-10);
+  }
+
+  .bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    background-color: rgba(30,144,255,15);
+    bottom: -100px;
+    animation: square 20s infinite;
+    transition-timing-function: linear;
+  }
+
+  .bubbles li:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 20%;
+  }
+
+  .bubbles li:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 90%;
+    animation-delay: 5s;
+    animation-duration: 15s;
+  }
+
+  .bubbles li:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 65%;
+    animation-delay: 4s;
+    animation-duration: 18;
+  }
+
+
+    .bubbles li:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 40%;
+    animation-delay: 10s;
+    animation-duration: 20s;
+  }
+
+    .bubbles li:nth-child(5) {
+    width: 50;
+    height: 50;
+    left: 50%;
+    animation-delay: 6s;
+    animation-duration: 12s;
+  }
+
+    .bubbles li:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    animation-delay: 8s;
+    animation-duration: 15s;
+  }
+
+  .bubbles li:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 10%;
+    animation-delay: 4s;
+    animation-duration: 10s;
+  }
+
+
+    .bubbles li:nth-child(8) {
+    width: 90px;
+    height: 90px;
+    left: 80%;
+    animation-delay: 12s;
+    animation-duration: 20s;
+  }
+
+    .bubbles li:nth-child(9) {
+    width: 50px;
+    height: 50px;
+    left: 5%;
+    animation-delay: 7s;
+    animation-duration: 12s;
+  }
+
+  @font-face {
+   font-family: orkweb; 
+   src: url('orkweb.otf');
+} 
+
+  @font-face {
+   font-family: orkweb_medium; 
+   src: url('orkweb_medium.otf');
+} 
+
+  .fa.fa-linkedin {
+color: #008080;
+}
+  .fa.fa-file-text-o {
+color: #008080;
+}
+
+#footer {
+    position: fixed;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+#central {
+position: fixed;
+bottom: 50%;
+left: 0;
+right: 0;
+}
+
+
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(640deg);
+  }
+
+}
   </style>
 </head>
 
 <body>
+</script>
 <br>
-<p class="prelude">On this semester's edition of <i>Procrastination: A Finals Week Odyssey</i>, I learn how to make a website.</p>
-<br>
-<br>
-<div class="container">
-<a href="resume.pdf"><img src="resumeicon.png"/></a>
-<a href="https://github.com/basselalesh"><img src="githubicon.png" /></a>
-<a href="https://linkedin.com/in/basselalesh"><img src="linkedinicon.png" /></a>
+<div id="central">
+<p class="prelude">On this semester's edition of:</p>
+<p class="italic">Procrastination: A Finals Week Odyssey</p>
+<p class="prelude">I learn how to make a website.</p>
 </div>
-
+<br>
+<br>
+<div id="footer">
+<a href="resume.pdf"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/basselalesh"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+</div>
+ <ul class="bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </body>
 </html>
